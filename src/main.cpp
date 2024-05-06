@@ -81,6 +81,9 @@ void autonomous() {
 	if(selector::auton == -2){Blue2();}
 	if(selector::auton == -3){}
 	if(selector::auton == 0){Skills();}
+
+	
+	
 	
 }
 

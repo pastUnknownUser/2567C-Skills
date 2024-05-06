@@ -1,7 +1,7 @@
+#include "main.h"
 #include "pros/misc.hpp"
 #include "lemlib/api.hpp"
-#include "pros/motors.h"
-#include "pros/rotation.hpp"
+
 
 pros::Motor front_left_motor(-1, pros::E_MOTOR_GEARSET_06); // left_motor_group
 pros::Motor middle_left_motor(-2, pros::E_MOTOR_GEARSET_06); // left_motor_group

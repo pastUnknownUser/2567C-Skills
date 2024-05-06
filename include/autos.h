@@ -4,12 +4,13 @@
 #include "lemlib/api.hpp"
 
 
+
 void Red1(){
     chassis.setPose(0,0,0);
 }
 
 void Red2(){
-
+    chassis.setPose(0,0,0);
 }
 
 void Blue1(){

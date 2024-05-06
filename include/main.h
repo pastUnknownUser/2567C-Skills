@@ -41,7 +41,7 @@
  */
 //#include "okapi/api.hpp"
 //#include "pros/api_legacy.h"
-#include "Lemlib.h"
+#include "autos.h"
 
 /**
  * If you find doing pros::Motor() to be tedious and you'd prefer just to do
