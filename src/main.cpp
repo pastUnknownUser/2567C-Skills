@@ -1,7 +1,8 @@
 #include "main.h"
 #include "pros/misc.hpp"
 #include "lemlib/api.hpp"
-#include "Lemlib.h"
+#include "autoSelect/selection.h"
+#include "autos.h"
 
 /**
  * A callback function for LLEMU's center button.
@@ -28,6 +29,7 @@ void on_center_button() {
 // initialize function. Runs on program startup
 void initialize() {
     pros::lcd::initialize(); // initialize brain screen
+	selector::init(); // initialize auto selector
     chassis.calibrate(); // calibrate sensors
     // print position to brain screen
     pros::Task screen_task([&]() {
@@ -72,7 +74,13 @@ void competition_initialize() {}
  * from where it left off.
  */
 void autonomous() {
-	
+	if(selector::auton == 1){Red1();}
+	if(selector::auton == 2){Red2();}
+	if(selector::auton == 3){}
+	if(selector::auton == -1){Blue1();}
+	if(selector::auton == -2){Blue2();}
+	if(selector::auton == -3){}
+	if(selector::auton == 0){Skills();}
 	
 }
 
