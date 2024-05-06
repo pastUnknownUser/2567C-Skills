@@ -1,26 +1,24 @@
 #include "lemlib/chassis/chassis.hpp"
-#include "main.h"
 #include "pros/misc.hpp"
 #include "lemlib/api.hpp"
+#include "Lemlib.hpp"
 
-
-
-void Red1(){
-    chassis.setPose(0,0,0);
+inline void Red1(){
+    
 }
 
-void Red2(){
-    chassis.setPose(0,0,0);
-}
-
-void Blue1(){
+inline void Red2(){
 
 }
 
-void Blue2(){
+inline void Blue1(){
 
 }
 
-void Skills(){
+inline void Blue2(){
+
+}
+
+inline void Skills(){
 
 }

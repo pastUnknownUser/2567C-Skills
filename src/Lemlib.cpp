@@ -1,6 +1,7 @@
 #include "main.h"
 #include "pros/misc.hpp"
 #include "lemlib/api.hpp"
+#include "Lemlib.hpp"
 
 
 pros::Motor front_left_motor(-1, pros::E_MOTOR_GEARSET_06); // left_motor_group
