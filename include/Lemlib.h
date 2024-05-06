@@ -1,4 +1,3 @@
-#include "main.h"
 #include "pros/misc.hpp"
 #include "lemlib/api.hpp"
 #include "pros/motors.h"
