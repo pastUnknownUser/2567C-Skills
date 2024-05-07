@@ -3,6 +3,7 @@
 #include "lemlib/api.hpp"
 #include "autoSelect/selection.h"
 #include "autos.h"
+#include "Lemlib.hpp"
 
 
 /**
