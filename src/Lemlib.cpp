@@ -4,12 +4,12 @@
 #include "Lemlib.hpp"
 
 
-pros::Motor front_left_motor(-1, pros::E_MOTOR_GEARSET_06); // left_motor_group
-pros::Motor middle_left_motor(-2, pros::E_MOTOR_GEARSET_06); // left_motor_group
-pros::Motor back_left_motor(-3, pros::E_MOTOR_GEARSET_06); // left_motor_group
-pros::Motor front_right_motor(4, pros::E_MOTOR_GEARSET_06); // right_motor_group
-pros::Motor middle_right_motor(5, pros::E_MOTOR_GEARSET_06); // right_motor_group
-pros::Motor back_right_motor(6, pros::E_MOTOR_GEARSET_06); // right_motor_group
+pros::Motor front_left_motor(15, pros::E_MOTOR_GEARSET_06); // left_motor_group
+pros::Motor middle_left_motor(14, pros::E_MOTOR_GEARSET_06); // left_motor_group
+pros::Motor back_left_motor(13, pros::E_MOTOR_GEARSET_06); // left_motor_group
+pros::Motor front_right_motor(-12, pros::E_MOTOR_GEARSET_06); // right_motor_group
+pros::Motor middle_right_motor(-9, pros::E_MOTOR_GEARSET_06); // right_motor_group
+pros::Motor back_right_motor(-19, pros::E_MOTOR_GEARSET_06); // right_motor_group
 
 // left motor group
 pros::MotorGroup left_motor_group({ front_left_motor, middle_left_motor, back_left_motor });
@@ -37,9 +37,9 @@ lemlib::TrackingWheel horizontal_tracking_wheel(&horizontal_encoder, lemlib::Omn
 lemlib::TrackingWheel vertical_tracking_wheel(&vertical_encoder, lemlib::Omniwheel::NEW_275, -2.5);
 
 // odometry settings
-lemlib::OdomSensors sensors(&vertical_tracking_wheel, // vertical tracking wheel 1, set to null
+lemlib::OdomSensors sensors(nullptr, // vertical tracking wheel 1, set to null
                             nullptr, // vertical tracking wheel 2, set to nullptr as we are using IMEs
-                            &horizontal_tracking_wheel, // horizontal tracking wheel 1
+                            nullptr, // horizontal tracking wheel 1
                             nullptr, // horizontal tracking wheel 2, set to nullptr as we don't have a second one
                             &imu // inertial sensor
 );
