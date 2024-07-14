@@ -96,6 +96,12 @@ void autonomous() {
 void opcontrol() {
 	pros::Controller controller(pros::E_CONTROLLER_MASTER);
 
+    chassis.moveToPoint(10, 10, 1000);
+    pros::delay(1000);
+    chassis.moveToPoint(0, 0, 1000);
+
+    /*
+
 	while (true) {
         
 		 // get left y and right y positions
@@ -110,6 +116,7 @@ void opcontrol() {
         // delay to save resources
         pros::delay(25);
 	}
+    */
 
     
 }
