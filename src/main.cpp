@@ -1,6 +1,8 @@
 #include "main.h"
-#include "pros/misc.hpp"
-#include "lemlib/api.hpp"
+#include "pros/misc.hpp" // IWYU pragma: keep
+#include "lemlib/api.hpp" // IWYU pragma: keep
+#include "pros/motors.h" // IWYU pragma: keep
+#include "pros/rtos.hpp" // IWYU pragma: keep
 #include "skills.h"
 #include "Lemlib.hpp"
 
@@ -95,14 +97,19 @@ void opcontrol() {
 	pros::Controller controller(pros::E_CONTROLLER_MASTER);
 
 	while (true) {
+        
 		 // get left y and right y positions
         int leftY = controller.get_analog((pros::E_CONTROLLER_ANALOG_LEFT_Y));
         int rightY = controller.get_analog((pros::E_CONTROLLER_ANALOG_RIGHT_Y));
 
         // move the robot
         chassis.tank(-leftY, -rightY);
+        
+        chassis.moveToPoint(0, 10, 1000);
 
         // delay to save resources
         pros::delay(25);
 	}
+
+    
 }
