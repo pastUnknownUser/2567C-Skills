@@ -1,7 +1,7 @@
-# Project Name
+# 2567C-Skills
 
 ### Overview
-Brief description of the project, its purpose, and goals.
+Skills Programs for 2567C
 
 ### Table of Contents
 - [Getting Started](#getting-started)
