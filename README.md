@@ -16,6 +16,6 @@ Skills Programs for 2567C
 #### Installation
 Steps to install and set up the project on your local machine.
 
-# Clone the repository
+#### Clone the repository
 git clone https://github.com/pastUnknownUser/2567C-Skills
 
