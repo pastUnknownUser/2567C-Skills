@@ -1,1 +1,21 @@
-2567C Lemlib
+# Project Name
+
+### Overview
+Brief description of the project, its purpose, and goals.
+
+### Table of Contents
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+
+### Getting Started
+
+#### Prerequisites
+- VSCode 
+- PROS Extention
+  
+#### Installation
+Steps to install and set up the project on your local machine.
+
+# Clone the repository
+git clone https://github.com/pastUnknownUser/2567C-Skills
+

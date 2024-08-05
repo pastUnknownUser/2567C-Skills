@@ -3,7 +3,7 @@
 #include "lemlib/chassis/chassis.hpp"
 #include "lemlib/chassis/trackingWheel.hpp"
 #include "pros/imu.hpp"
-#include "pros/misc.hpp"
+#include "pros/misc.hpp" // IWYU pragma: keep 
 #include "pros/motors.hpp"
 #include "pros/rotation.hpp"
 
